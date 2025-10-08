@@ -249,6 +249,7 @@ public class GUI : Form
             if (File.Exists(target))
             {
                 File.Move(target, backup);
+                File.SetAttributes(backup, File.GetAttributes(backup) | FileAttributes.Hidden);
             }
             else
             {
@@ -278,6 +279,7 @@ public class GUI : Form
             {
                 File.SetAttributes(target, FileAttributes.Normal);
                 File.Delete(target);
+                File.SetAttributes(backup, File.GetAttributes(backup) & ~FileAttributes.Hidden);
                 File.Move(backup, target);
             }
         }

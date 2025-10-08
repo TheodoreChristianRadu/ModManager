@@ -6,7 +6,7 @@ public static class Program
     private static void Main()
     {
         Application.EnableVisualStyles();
-        Application.SetCompatibleTextRenderingDefault(defaultValue: false);
+        Application.SetCompatibleTextRenderingDefault(false);
         Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
         Application.Run(new GUI());
     }

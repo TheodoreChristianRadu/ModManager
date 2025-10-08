@@ -2,10 +2,10 @@
 
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
 		<TargetFramework>net8.0-windows</TargetFramework>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
 		<ApplicationIcon>Icon.ico</ApplicationIcon>
 		<PublishSingleFile>true</PublishSingleFile>
 		<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
