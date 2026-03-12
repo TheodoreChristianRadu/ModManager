@@ -30,7 +30,8 @@ public static class Settings
             { "AdditionalFiles", AdditionalFiles },
             { "AdditionalFolders", AdditionalFolders }
         };
-        var json = JsonSerializer.Serialize(data);
+        static JsonSerializerOptions Options() => new() { WriteIndented = true };
+        var json = JsonSerializer.Serialize(data, Options());
         File.WriteAllText(path, json);
     }
 }
